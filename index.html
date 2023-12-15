@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		<link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+		<meta property="og:description" content="Welcome. Please look around, listen to music, browse blog entries, and subscribe to get info on my latest projects and other events." />
+		<meta property="og:image" content="http://www.adamcelaya.com/images/social-background.png" />
+		<title>Adam Celaya, Composer</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	</head>
+
+	<body id="body" onload="ToVideoOrNot()">
+		
+		<header>
+			<nav>
+				<ul>	
+					<li>news</li>
+					<li>bio</li>
+					<li>blog</li>
+					<li>game</li>
+				</ul>
+			</nav>
+
+			<audio id="audioElement" preload="true">
+				<source src="" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+
+			<div id="div-player">
+				<button id="pButton" class="play" onclick="playPause()"></button>
+				<ul id="reveal">
+			    	<li id="revealLI">
+			      		<h1 id="songtitle">PLAYLIST</h1>
+			      		<ul id="dropdown">
+			        		<li id="1" class="dropdownList">1 - Bartok Bagatelle (Arranged)</li>
+							<li id="2" class="dropdownList">2 - A Journey Begins</li>
+							<li id="3" class="dropdownList">3 - Suds End Credits</li>
+							<li id="4" class="dropdownList">4 – Lonely City</li>
+							<li id="5" class="dropdownList">5 - Magi</li>
+							<li id="6" class="dropdownList">6 - Prologue</li>
+							<li id="7" class="dropdownList">7 - A Journey Ends</li>
+							<li id="8" class="dropdownList">8 - One Last Chance</li>
+							<li id="9" class="dropdownList">9 - For Now</li>
+							<li id="10" class="dropdownList">10 - Into Another World</li>
+							<li id="11" class="dropdownList">11 - Dichotomy</li>
+							<li id="12" class="dropdownList">12 - The Window Washer</li>
+							<li id="13" class="dropdownList">13 - Annabel Lee</li>
+			      		</ul>
+			    	</li>
+			  	</ul>
+			</div>
+			
+			<div id="contact">
+				<a href="https://www.linkedin.com/in/adamcelaya" target="_blank"><img id="linkedin" src="images/linkedin-7.jpeg" alt="linkedin" height="24" width="24"></a>
+				<a href="mailto:contact@adamcelaya.com" target="_blank"><img src="images/mail-2.png" alt="email" height="30" width="30"></a>
+			</div>
+		</header>
+
+
+
+		<div id="content-main">
+			<div id="div-news">
+				<figure>
+					<a href="http://eepurl.com/b3Cebn" target="_blank"><h3 style="color:#DDFFC0; font-size: 1em">Subscribe</h3></a>
+				</figure>
+				<figure>
+					<figcaption>
+						<p>Welcome! Please look around, listen to music, browse blog entries, and get info on my latest projects and other events. Side note: I designed and coded this website from scratch...(a beast of a project. Audio player in the top left took forever to get functioning properly. It is functioning properly, right?)<em> #AmateurWebmaster</em></p>
+					</figcaption>
+				</figure>
+				<hr>
+
+
+				<!-- new entries go here -->	
+
+
+				<figure>
+					<h3>Yet Another Upcoming Film</h3>
+					<h6>1 March, 2017</h6>
+					<figcaption>
+						<p>Great experience working on the music prep for <a href="http://www.imdb.com/title/tt1469304/" target="_blank" class="paragraph-links">Baywatch</a>. Also went to one of the days of the recording session at the Eastwood Scoring Stage on the Warner Brothers lot. Nothing quite like the sound of a 75-piece orchestra in that space. Here is a pic from one of the days of recording. Kudos to Christopher Lennertz the composer and his team for writing such great music.</p>
+					</figcaption>
+				</figure>
+				<hr>				
+				<figure>
+					<h3>Another Upcoming Film</h3>
+					<h6>5 January, 2017</h6>
+					<figcaption>
+						<p>Just finished working on the music prep for <a href="http://www.imdb.com/title/tt2398241/" target="_blank" class="paragraph-links">Smurfs: Lost Village</a>. There are some downright psychedelic moments in Christopher Lennertz's score. Awesome!</p>
+					</figcaption>
+				</figure>
+				<hr>
+				<figure>
+					<h3>Upcoming Film</h3>
+					<h6>2 November, 2016</h6>
+					<figcaption>
+						<p>Excited to have co-orchestrated Alan Lazar's score for the upcoming film <a href="http://www.imdb.com/title/tt4842646/" target="_blank" class="paragraph-links">The Most Hated Woman in America</a>. It was great working with <a href="http://www.imdb.com/name/nm0719301/?ref_=fn_al_nm_1" target="_blank" class="paragraph-links">Larry Rench</a>, a class act and a brilliant orchestrator.</p>
+					</figcaption>
+				</figure>
+				<hr>
+				<figure>
+					<h3>Album Release - "I Have Graven Thee"</h3>
+					<h6>1 November, 2015</h6>
+					<figcaption>
+						<p>So excited about this album release. I couldn't have done this one without the help of so many people. From the soloists Daniel Beck, Mindy Smoot Robbins, and David Matthew Smith, to Dan Smith for his support and for recommending the wonderful Lux Singers, to Jake Judd and Molly Cowley for their instrumental solos, to Stoker White and his mad engineering skills, to my sister Jessica who gave me valuable feedback on the script, and of course to my wife for her endless support and patience. It goes without saying that it is the Lord Jesus Christ that made this album a possibility. His sacrifice is an unfailing source of strength and hope. <a href="http://www.ihavegraventhee.com" target="_blank" class="paragraph-links">+ Visit Site</a></p>
+					</figcaption>
+				</figure>
+				<hr>
+				<figure>
+					<h3>IMDB</h3>
+					<h6>09 August, 2015</h6>
+					<figcaption>
+						<p>Didn't realize that IMDB had listed two of my compositions from a few years ago. One is for the animated short film "Suds"<a href="https://www.youtube.com/watch?v=OLI-71QGDHA" target="_blank" class="paragraph-links"> (view a short clip)</a>. I was fortunate to have the opportunity to write the music for the animated film produced each year by animation students at Columbia College Chicago. Christopher Marlowe and team did a fantastic job. It was also a treat to record the score at Capitol Studios with some of the finest engineers and musicians I've had the pleasure to work with. The other one is for a few cartoon episodes.</p>
+					</figcaption>
+				</figure>
+			</div>
+
+
+
+			<div id="div-bio">
+				<figure>
+					<img src="images/bio-image2.jpg" alt="bio-image" height="100%" width="25%">
+					<a href="mailto:contact@adamcelaya.com" target="_blank"><h3>Contact@AdamCelaya.com</h3></a>
+					<br>
+					<a href="https://www.linkedin.com/in/adamcelaya" target="_blank"><h3>Linkedin</h3></a>
+					<figcaption>
+						<p id="bio">Adam currently lives in the greater LA area where he composes and orchestrates music for film and TV. He grew up on the peninsula just south of San Francisco and discovered a love for music listening to church hymns, pop music, and animated musicals. He studied voice and guitar before receiving his Bachelor’s in media music from BYU and then his Master’s in music composition for the screen from Columbia College Chicago, where he studied under former Disney VP of music production Andy Hill and Emmy-award winning composer Hummie Mann. He interned with composer/orchestrator J.A.C. Redford (<i>Avatar, Skyfall, Saving Mr. Banks, Bridge of Spies</i>). Adam has written music for commercials, cartoons, musicals, corporate campaigns, short films, and albums.</p>
+					</figcaption>
+				</figure>
+			</div>
+
+
+
+			<div id="div-blog">
+				<figure>
+					<a href="http://eepurl.com/b3Cebn" target="_blank"><h3 style="color:#DDFFC0; font-size: 1em">Subscribe</h3></a>
+				</figure>
+
+
+				<!-- new entries go here -->
+				<figure>
+					<h3>Bach Chorales: The Ballet of Music</h3>
+					<h6>30 August, 2016</h6>
+					<img src="images/JS-Bach.jpg" alt="picture" height="100%" width="100%">
+					<figcaption>
+						<p>In a recent lesson I was reminded that the best way to improve technique is by reviewing the basics. Just like all good dancers should study ballet, so too should all good composers study Bach. In particular the contrapuntal and harmonic technique demonstrated in his chorale harmonizations. It's actually pretty amazing how modern some of it sounds considering they were written several hundred years ago. As I've analyzed these, I've discovered the creativity he displayed within the stricter compositional rules of the time. It has also been instructive to realize that the harmonic movement of these pieces very much resembles the narrative arc of storytelling/filmmaking. The narrative arc of course comprises an introduction, rising action, climax, falling action, and a conclusion. So in these chorales the first thing Bach does is establish the home key (like the introduction), then he explores or moves away from the key (rising action), then his exploration reaches a peak or arrival (climax), then the harmony moves again, but instead of exploring it is resolving towards a final key (falling action), and eventually he arrives at the final or original key (conclusion).</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<h3>Going from Midi Mockup to Notated Score</h3>
+					<h6>31 July, 2016</h6>
+					<img src="images/DAWs.jpg" alt="picture" height="100%" width="100%">
+					<figcaption>
+						<p>Some of my non-composer readers have wanted to better understand my process as an orchestrator. So here is a basic overview. It often begins with the composer's mockup. What is a mockup? Directors and producers often want to hear what the music will sound like before they spend thousands of dollars to record it. So a composer will create a realistic sounding mockup with their computer using sampled or synthesized instruments. Of course some projects don't have the budget for live musicians, in which case the mockup is actually the final product. Much of the film and TV music we hear is a combination of live recorded musicians and sampled/synthesized sounds – a hybrid score. Tangent. So my job often starts when I receive the composer's mockup. I take that mockup and prepare it in a way that it can be transferred to a notation program like Finale or Sibelius. Once that is done, then I need to make decisions about how to best interpret the composer's music using the orchestra or musicians available to me. The amount of those decision I need to make varies from one project to the next. Some composers mockup their music in a way that translates nicely to an orchestra, and have already made most of the orchestrational decisions. Other composers provide me with a simple piano sketch, leaving the orchestration entirely up to me. So that's an oversimplification of a very crazy process, but I hope it provides at least some insight for my curious non-composer readers.</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<h3>The Society of Composers & Lyricists – Sonic Choices Seminar</h3>
+					<h6>27 June, 2016</h6>
+					<img src="images/anamorphicdigitalsound.jpg" alt="picture" height="250px" width="100%">
+					<figcaption>
+						<p>Just bought my ticket to this. I'm most excited to hear from orchestrator/arranger Suzie Katayama. The Society of Composer & Lyricists is an association (not a union) for composers, lyricists, and songwriters working in motion pictures, television, and multimedia. This particular seminar will be at the American Film Institute.</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<h3>Nadia Boulanger</h3>
+					<h6>18 May, 2016</h6>
+					<img src="images/Boulanger.jpg" alt="picture" height="100%" width="100%">
+					<figcaption>
+						<p>I've been on this huge <a href="https://en.wikipedia.org/wiki/Nadia_Boulanger" target="_blank" class="paragraph-links">Nadia Boulanger</a> kick. She has been called the greatest music teacher of the 20th century, with notable students such as Aaron Copland, Philip Glass, Leonard Bernstein, and so many more. I would've loved the opportunity, when she was alive, to have travelled to France and sat in on a lesson at Fontainebleau. And yet her influence on me is not far removed. For example, I'm currently studying with Dr. David Conte, who was one of the last American students of Boulanger (Dr. Conte also studied with the great Aaron Copland). A few years ago I had the privilege of interning with JAC Redford, who developed much of his craft studying with Thomas Pasatieri (also a former student of Boulanger). Really? This Mademoiselle is like the Noah of musical heritage – we all go back to her eventually.</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<h3>Musical Acuity</h3>
+					<h6>05 April, 2016</h6>
+					<img src="images/roger-kalia3.jpg" alt="picture" height="100%" width="100%">
+					<figcaption>
+						<p>Today I watched an impressive conductor by the name of <a href="http://rogerkalia.com" target="_blank" class="paragraph-links">Roger Kalia</a>. I was sitting in on one of his rehearsals with the CSU Fullerton Symphony Orchestra. They were working through Rimsky Korsakov's Capriccio Espagnol for an upcoming concert. Towards the end of the 2nd movement the clarinet and violins play an accompanimental figure in unison, and as they were rehearsing it didn't quite have the clarity that Rimsky Korsakov must have envisioned. Maestro Kalia told the clarinet player to back off a bit and trust the orchestration. Although the clarinet player was not in total agreement with this, he relented. When that part came up again, the clarinet player backed off, and the violin pizzicato emerged beautifully from the underlying texture. It was a small change but it made a huge difference. Lesson learned: to get the best performance possible you have to hear it in your head before attempting to conduct it. Easier said then done. </p>
+					</figcaption>
+				</figure>
+				<figure>
+					<h3>On Composing Music</h3>
+					<h6>17 March, 2016</h6>
+					<img src="images/on-composing-music.png" alt="picture" height="100%" width="100%">
+					<figcaption>
+						<p>I often observe people who hear music that moves them expressing the sentiment, "What a glamorous thing it must be to write music." Why do some people think that? Why is it that with most professionals their success is attributed to hard work, but with composers somehow it is a gift, and their creative output is a matter of inspiration? The truth, at least with mere mortals like myself, is that writing music is mundane and technical. I'll often work on some musical idea a hundred times before I feel like it is right. I can count the times on one hand when I felt like what I was writing "just came to me". Don't get me wrong, in addition to the mundane and technical aspect, I also consider it an art and a gift. But such could be said for almost any kind of worthwhile work.</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<h3>Links I've Stumbled Upon</h3>
+					<h6>20, February 2016</h6>
+					<img src="images/five-line7.png" alt="picture" height="100%" width="32.2%"><img src="images/imslp1.jpg" alt="picture" height="100%" width="34.4%"><img src="images/stravinsky1.jpg" alt="picture" height="100%" width="33.3%">
+					<figcaption>
+						<p>When else in history could you consult a little handheld device and within minutes (depending on the complexity of the topic) learn just about anything your mind can think of. Its unreal. In my case I can summon an audio recording from a hundred years ago, I can improve a skill by watching a celebrated musician give a master class from thirty years ago as if I was there in the room, and I can find the sheet music for an entire symphony within seconds. Here are some cool links I've stumbled upon recently.
+							<ol>
+								<li><a href="http://fivelineproductions.com" target="_blank" class="paragraph-links">fivelineproductions.com - </a>Beautiful music engraving.</li>
+								<br>
+								<li><a href="http://imslp.org" target="_blank" class="paragraph-links">IMSLP.org - </a>Great resource for online study scores.</li>
+								<br>
+								<li><a href="https://www.youtube.com/watch?v=RZkIAVGlfWk" target="_blank" class="paragraph-links">Firebird - </a>If you don't have 45 min, at least watch the last 7.</li>
+							</ol>
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+
+
+
+			<div id="div-game">
+				<figure>
+					<h3 id="game">stay tuned ...</h3>
+				</figure>
+			</div>			
+		</div>	
+
+		<script>
+			$(document).ready(function(){
+			    $("nav li:nth-child(1)").click(function(){
+		        	$("#div-bio, #div-blog, #div-game").fadeOut("fast");
+		        	$("#div-news").fadeIn("fast");	
+		        	window.scrollTo(0,0);
+	        	});
+	        	$("nav li:nth-child(2)").click(function(){
+		        	$("#div-news, #div-blog, #div-game").fadeOut("fast");
+		        	$("#div-bio").fadeIn("fast");
+		        	window.scrollTo(0,0);	
+	        	});
+	        	$("nav li:nth-child(3)").click(function(){
+		        	$("#div-news, #div-bio, #div-game").fadeOut("fast");
+		        	$("#div-blog").fadeIn("fast");	
+		        	window.scrollTo(0,0);
+	        	});
+	        	$("nav li:nth-child(4)").click(function(){
+		        	$("#div-news, #div-bio, #div-blog").fadeOut("fast");
+		        	$("#div-game").fadeIn("fast");	
+		        	window.scrollTo(0,0);
+	        	});
+			});
+		</script>
+
+		<script src="scripts.js"></script>
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

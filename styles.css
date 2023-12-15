@@ -1,0 +1,382 @@
+@import 'normalize.css';
+
+html {
+	min-height: 100%;
+}
+
+body {
+	margin: 0 auto;
+	/*background-color: black;*/
+	font-size: 100%;
+	min-height:100%; /* this fixes bgimage issue on android */
+	background: black no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+#loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('images/page-loader.gif') 50% 50% no-repeat;
+}
+
+video {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+
+nav {
+	position: fixed;
+	height: 49px;
+	width: 100%;
+	background-color: rgba(0,0,0,.93);
+	text-align: center;
+}
+nav ul {
+	padding: 0;
+}
+nav ul li:hover {color: #D0D0D0;}
+nav ul li {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	list-style: none;
+	letter-spacing: 1.5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline;
+	margin: 0 3%;
+	padding: 1% 0;
+	z-index: 16;
+}
+
+
+
+
+#div-player {
+	font-family: 'Raleway', sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	position: fixed;
+	left: 3%;
+	/*background-color: red;*/
+	height: 50px;
+	z-index: 8;
+}
+#pButton{
+    margin-top: 0px;
+    height: 50px; 
+    width: 50px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    outline: none;
+    cursor: pointer;
+    opacity: .8;
+    /*background-color: blue;*/
+}
+.pause {background: url('images/pause-12.png') no-repeat;}
+.play {background: url('images/play-12.png') no-repeat;}
+#songtitle {
+	color: #FFFFFF;
+	font-size: 1em;
+	margin: 0;
+/*	text-decoration: none;*/
+	/*background-color: green;*/
+}
+#div-player > ul {
+	position: absolute;
+	margin-top: 6px;
+	cursor: pointer;
+	/*background-color: blue;*/
+	clear: both;
+}
+#div-player > ul > li {
+    margin-left: 15px;
+    /*background-color: red;*/
+}
+#div-player * ul li {
+	color: #FFFFFF;
+	cursor: pointer;
+}
+#div-player ul {
+	display: inline-block;
+	padding: 13px 0;
+	width: 203px;
+}
+#div-player ul li {display: inline-block;}
+/*#div-player ul li:hover ul, #div-player ul li:active ul {display: block;}*/
+#div-player ul li ul {
+	position: absolute;
+	display: none;
+	background-color: rgba(0,0,0,.93);
+}
+#div-player ul li ul li { 
+	display: block;
+	padding: 3px 10px; 
+}
+#div-player ul li ul li a {display:block !important;} 
+#div-player ul li ul li:hover, #div-player ul li ul li:active {color: #C6C6C6;}
+
+
+
+
+
+
+
+
+
+
+#contact {
+	position: fixed;
+	right: 8%;
+	margin-top: 10px;
+	opacity: .7;
+	/*background-color: red;*/
+}
+#linkedin {
+	border-radius: 50%;
+	margin-top: 3%;
+}
+#contact img {
+	padding: 0 15px;
+	/*background-color: blue;*/
+	float: left;
+}
+
+
+
+
+
+#content-main {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: -2; /*otherwise the dropdown nav in mobile sits behind the content*/
+    width: 625px;
+    text-align: justify;
+}
+figure a {
+	text-decoration: none;
+	color: #907900;
+}
+/*this fixes the links from being clickable all the way across the screen*/
+figure a h3 {
+	display: inline-block;
+}
+.paragraph-links {color: #B19400;}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(256, 256, 256, 0), rgba(256, 256, 256, 0.75), rgba(256, 256, 256, 0));
+    margin-bottom: 50px;
+}
+
+div div {
+	position: absolute;
+	font-family: 'Raleway', sans-serif;
+	color: #FFFFFF;
+	line-height: 175%;
+	letter-spacing: 1px;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    display: none;
+}
+
+figure {margin-bottom: 50px;}
+figure h3 {
+	margin-bottom: 0px;
+	color: #907900;
+}
+
+figure h6 {
+	margin-top: 0px;
+	color: #907900;
+}
+figcaption em {
+	color: #B19400;
+}
+
+#div-news p {margin-top: 0;}
+#div-news h6 {margin-bottom: 0;}
+#div-news figure:first-child {
+	margin-bottom: 25px;
+}
+#div-game {text-align: center; top: 150px;}
+
+#div-bio img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	float: left;
+}
+/*#div-bio * a {
+	float: left;
+	width: 75%;
+} */
+#div-bio h3 {
+	margin: 0;
+	margin-left: 10%;
+	color: #907900;
+	font-size: 1.1em;
+}
+#div-bio figcaption {
+	clear: both;
+}
+#div-blog figure:first-child {
+	margin-bottom: 25px;
+}
+#div-blog ol {
+	color: #FFFFFF;
+	line-height: 100%;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+
+
+
+
+
+/* this is when the nav changes (true for phones and portrait tablets) */
+@media only screen and (max-width: 937px) {
+/*	nav {display: none;} */
+	nav {z-index: -1;}
+	nav ul {
+		display: none;
+		float: right;
+		text-align: right;
+		width: 100%;
+		margin-top: 48px;
+		background-color: rgba(0,0,0,.93);
+	}
+	nav ul li {
+		display: block;
+		height: 2em;
+		margin-right: 9.5%;
+	}
+	nav ul li:first-child {
+		margin-top: 15px;
+	}
+	#contact {
+		display: none;
+	}
+	#menu {
+		position: fixed;
+		right: 0;
+		width: 1.4em;
+		display: inline;
+		color: #878787;
+		font-size: 2em;
+		text-align: center;
+		float: right;
+		margin-right: 8%;
+		cursor: pointer;
+		z-index: 100;
+	}
+}
+/*  hiding the 3-line menu until responsive nav kicks in (above) */
+@media only screen and (min-width: 938px) {
+	#menu {
+		display: none;
+	}
+}
+/* this is when the content area changes. The orientation condition is added so that when people drag their desktop browser screen it remains unaffected */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+	#content-main {
+		width: 82%;
+	}
+	figure {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+/* same as above, except now it happens on desktops as well */
+@media only screen and (max-width: 666px) {
+	#content-main {
+		width: 82%;
+	}
+	figure {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+/* additional responsive adjustments for portrait phones */
+@media only screen and (max-width: 567px) {
+	#content-main {
+		text-align: left;
+	}
+	#div-bio h3 {
+		margin-left: 0;
+		width: 100%;
+		display: inline;
+	}
+	#div-bio img {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+/*@media only screen and (orientation: portrait) {
+	video {display: none;}
+}*/
+
+
+/* Tablet Landscape */
+/*@media screen and (max-width: 1023px) {
+	#div-player {
+		bottom: 0px;
+		width: 230px;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#div-player ul li ul {
+  		display: none;
+  		top: -365px;
+  		padding-bottom: 50px
+	}
+	#div-player ul li ul li {
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+}*/
+
+/* Tabled Portrait */
+/*@media screen and (max-width: 1075px) {
+    nav ul li {
+    	margin-left: 20px;
+    	margin-right: 20px;
+    }
+}*/
+
+/*font size */
+/*@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } */
+
+
